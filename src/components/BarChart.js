@@ -12,6 +12,7 @@ const BarChart = () => {
   return (
     <div>
       <Plot
+        layout={{ width: 500, height: 500, title: "Time series data" }}
         data={[
           {
             x: output,
@@ -21,7 +22,6 @@ const BarChart = () => {
           },
           { type: "scatter", x: output, y: rate }
         ]}
-        layout={{ width: 500, height: 500, title: "Time series data" }}
       />
     </div>
   );
